@@ -1,5 +1,12 @@
-<form method="POST">
+<form method="POST" style="max-width: 400px; margin: 50px auto; padding: 20px; border: 1px solid #ddd; border-radius: 8px; font-family: Arial, sans-serif; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
     {% csrf_token %}
-    <h1>Do you want to delete: {{item.item_name}}</h1>
-    <button type="submit">Confirm</button>
+    <h2 style="color: #d9534f; text-align: center;">Confirm Deletion</h2>
+    <p style="font-size: 16px; margin-bottom: 20px; text-align: center;">
+        Are you sure you want to delete: <strong>{{ item.item_name }}</strong>?
+    </p>
+    <div style="display: flex; justify-content: center; gap: 20px;">
+        <button type="submit" style="background-color: #d9534f; border: none; color: white; padding: 10px 25px; font-size: 16px; border-radius: 5px; cursor: pointer; transition: background-color 0.3s;">
+            Confirm
+        </button>
+    </div>
 </form>

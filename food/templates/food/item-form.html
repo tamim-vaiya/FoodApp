@@ -1,9 +1,13 @@
 {% extends "food/base.html" %}
 
 {% block body %}
-    <form method='POST'>
-        {% csrf_token %}
-        {{ form.as_p}}
-        <button type='submit' class='btn btn-primary'>Save</button>
-    </form>
+<div class="d-flex justify-content-center align-items-center vh-100">
+    <div class="container p-4 border rounded shadow" style="width: 50%; background-color: #fff;">
+        <form method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="btn btn-primary mt-2">Save</button>
+        </form>
+    </div>
+</div>
 {% endblock body %}
