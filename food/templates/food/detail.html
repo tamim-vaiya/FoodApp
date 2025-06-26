@@ -21,7 +21,7 @@
                     <h1 class="mb-3 fw-bold">{{ item.item_name }}</h1>
                     <p class="mb-4 text-muted fs-5">{{ item.item_desc }}</p>
                     <h3 class="text-primary fw-semibold mb-4">$ {{ item.item_price }}</h3>
-                    <a href="#" class="btn btn-outline-primary btn-lg px-4">Buy Now</a>
+                    <a href="{% url "food:delete_item" item.id %}" class="btn btn-outline-danger btn-lg px-4">Delete</a>
                 </div>
             </div>
         </div>
