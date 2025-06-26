@@ -1,0 +1,9 @@
+# Ignore virtual environment folder
+django-mysite/
+
+# Ignore Python cache files
+**/__pycache__/
+*.pyc
+
+# Ignore SQLite DB
+db.sqlite3
